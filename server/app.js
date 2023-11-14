@@ -11,6 +11,10 @@ app.get("/", (req, res, next) => {
     res.status(200).send({ msg: "root route connected" });
 });
 
+app.get("/new-route", (req, res, next) => {
+    res.status(200).send({ msg: "new route connected" });
+});
+
 app.listen(PORT, () => {
     console.log(`server started on port ${PORT}`);
 });
