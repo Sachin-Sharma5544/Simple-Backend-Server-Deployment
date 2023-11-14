@@ -8,7 +8,7 @@ app.get("/admin", (req, res, next) => {
 });
 
 app.get("/", (req, res, next) => {
-    res.status(200).send({ msg: "root route connected" });
+    res.status(200).send({ msg: "Updated the message" });
 });
 
 app.get("/new-route", (req, res, next) => {
